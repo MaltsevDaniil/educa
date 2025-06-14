@@ -14,6 +14,7 @@ from pathlib import Path
 
 from django.conf.global_settings import MEDIA_ROOT
 from decouple import config
+from django.urls import reverse_lazy
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -132,3 +133,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 MEDIA_URL = "media/"
 MEDIA_ROOT = BASE_DIR / 'media'
+
+LOGIN_REDIRECT_URL = reverse_lazy("student_course_list")
