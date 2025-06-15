@@ -29,6 +29,7 @@ urlpatterns = [
     path("module/order/", views.ModuleOrderView.as_view(), name='module_order'),
     path("content/order/", views.ContentOrderView.as_view(), name='content_order'),
     path('students/', include('students.urls')),
+    path("__debug__/", include('debug_toolbar.urls')),
     path('', views.CourseListView.as_view(), name='course_list'),
 ]
 
