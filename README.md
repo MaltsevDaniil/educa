@@ -1,7 +1,7 @@
 "educa" - это образовательная платформа для создания и управления курсами. 
 
 Технологический стек:
-Backend: Python + Django (основа)
+Backend: Python + Django
 Frontend: HTML/CSS, JavaScript (без сложных фреймворков)
 База данных: SQLite (для разработки), PostgreSQL (через Docker)
 Инфраструктура: Docker + Docker Compose (для развёртывания)
